@@ -12,6 +12,7 @@ A Flatadango web application that allows its users to purchase the available mov
 ## TECHNOLOGIES
 1. HTML
 2. JavaScript
+3. CSS
 
 ## CONTACT INFORMATION
 You can reach out to me through:
