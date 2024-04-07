@@ -7,7 +7,7 @@
 A Flatadango web application that allows its users to purchase the available movie tickets.
 
 ## LIVE SITE
-https://mendarrr.github.io/ABBY-Code_Challenge_3/
+[https://mendarrr.github.io/ABBY-Code_Challenge_3/](https://mendarrr.github.io/ABBY-Code_Challenge_3/)
 
 ## TECHNOLOGIES
 1. HTML
