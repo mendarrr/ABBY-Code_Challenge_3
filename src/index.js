@@ -93,20 +93,3 @@ function handleBuyTicket(button) {
     }
   }
 
-// //   function handleBuyTicket(e) {
-// //     // Get the element displaying the remaining tickets
-// //     const ticketDiv = document.querySelector("#ticket-num");
-// //     const tickets = ticketDiv.textContent.split(" ")[0];
-// //     // If tickets are available, decrement the count
-// //     if (tickets > 0) {
-// //         ticketDiv.textContent = tickets - 1 + " remaining tickets";
-// //     }
-// //     // If no tickets are available, alert the user
-// //     else if (tickets == 0) {
-// //         alert("Tickets Sold-out!!");
-// //         // Change the style of the "Buy Ticket" button to indicate it's sold out
-// //         e.target.classList.add("sold-out");
-// //         e.target.textContent = "Sold Out";
-// //     }
-
-// }
