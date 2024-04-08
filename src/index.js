@@ -78,15 +78,35 @@ function handleMovieClick(movie) {
 }
 
 // Calculate the number of tickets remaining after buying
-function handleBuyTicket(a) {
+function handleBuyTicket(button) {
     const ticketDiv = document.querySelector("#ticket-num");
-    const tickets = ticketDiv.textContent.split(" ")[0];
+    const tickets = parseInt(ticketDiv.textContent.split(" ")[0], 10);
+  
     if (tickets > 0) {
-        ticketDiv.textContent = tickets - 1 + " remaining tickets";
+      ticketDiv.textContent = tickets - 1 + " remaining tickets";
+//Check if the tickets are sold out
+    } else if (tickets === 0) {
+      ticketDiv.textContent = 'Sold Out';
+// change the button's content
+      button.target.textContent = 'Sold Out'; 
+      button.disabled = true; 
     }
-    else if (tickets == 0) {
-        alert("No more tickets!");//output is given to the user that the tickets are sold out
-        a.target.classList.add("sold-out");
-        a.target.classList.remove("orange");
-    }
-}
+  }
+
+// //   function handleBuyTicket(e) {
+// //     // Get the element displaying the remaining tickets
+// //     const ticketDiv = document.querySelector("#ticket-num");
+// //     const tickets = ticketDiv.textContent.split(" ")[0];
+// //     // If tickets are available, decrement the count
+// //     if (tickets > 0) {
+// //         ticketDiv.textContent = tickets - 1 + " remaining tickets";
+// //     }
+// //     // If no tickets are available, alert the user
+// //     else if (tickets == 0) {
+// //         alert("Tickets Sold-out!!");
+// //         // Change the style of the "Buy Ticket" button to indicate it's sold out
+// //         e.target.classList.add("sold-out");
+// //         e.target.textContent = "Sold Out";
+// //     }
+
+// }
